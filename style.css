@@ -4,6 +4,8 @@
     --page-col-3: hsl(180, 100%, 25%);
     --page-col-4: hsl(248, 53%, 58%);
     --txt-light: hsl(0, 0%, 96%);
+    --btn-light: hsl(0, 0%, 96%);
+    --btn-dark: hsl(0, 0%, 36%);
 }
 
 *
@@ -15,6 +17,7 @@
 
 body {
     line-height: 1.4;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .page {
@@ -26,8 +29,32 @@ body {
     justify-content: center;
     color: var(--txt-light);
     padding: 0 4rem;     
+    font-size: 1.5rem;
 }
 
+.page h1 {
+    font: 4rem sans-serif;
+    line-height: 1;
+    margin: 1rem;
+}
+
+.page h3 {
+    margin: 20px 0 8px 0;
+}
+
+.page p {
+    margin: 1rem;
+    max-width: 650px;
+}
+
+.page ul {
+    margin-bottom: 20px;
+    max-width: 650px;
+}
+
+.page .links-container {
+    line-height: 2.3;
+}
 /* Page colors */
 #page-1 {background: var(--page-col-1);}
 #page-2 {background: var(--page-col-2);}
@@ -36,3 +63,21 @@ body {
 #page-5 {background: var(--page-col-1);}
 #page-6 {background: var(--page-col-2);}
 #page-7 {background: var(--page-col-3);}
+#page-8 {background: var(--page-col-4);}
+
+.btn {
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+.btn-light {
+    background: var(--btn-light);
+    color: var(--btn-dark);
+}
+
+.btn-dark {
+    background: var(--btn-dark);
+    color: var(--txt-light);
+}
