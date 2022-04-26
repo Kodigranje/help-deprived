@@ -27,11 +27,11 @@
 
         <div class="links-container">
             <a href="#page-2" class="btn btn-light">Hrana <i class="fa-solid fa-circle-arrow-down"></i></a>
-            <a href="#page-3" class="btn btn-light">Odeća i Ćebad <i class="fa-solid fa-circle-arrow-down"></i></a>
+            <a href="#page-3" class="btn btn-dark">Odeća i Ćebad <i class="fa-solid fa-circle-arrow-down"></i></a>
             <a href="#page-4" class="btn btn-light">Tuširanje, pranje odeće <i class="fa-solid fa-circle-arrow-down"></i></a>
-            <a href="#page-5" class="btn btn-light">Medicinska pomoć <i class="fa-solid fa-circle-arrow-down"></i></a>
+            <a href="#page-5" class="btn btn-dark">Medicinska pomoć <i class="fa-solid fa-circle-arrow-down"></i></a>
             <a href="#page-6" class="btn btn-light">Lekar opšte prakse <i class="fa-solid fa-circle-arrow-down"></i></a>
-            <a href="#page-7" class="btn btn-light">Mentalno zdravlje <i class="fa-solid fa-circle-arrow-down"></i></a>
+            <a href="#page-7" class="btn btn-dark">Mentalno zdravlje <i class="fa-solid fa-circle-arrow-down"></i></a>
             <a href="#page-8" class="btn btn-light">Dnevni centar <i class="fa-solid fa-circle-arrow-down"></i></a>
         </div>
     </section>
@@ -194,6 +194,28 @@
             <a href="#page-1" class="btn btn-light">Početna <i class="fa-solid fa-circle-arrow-up"></i></a>
         </div>
     </section>
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+        // Smooth Scrolling
+        $('.btn').on('click', function(event) {
+            if (this.hash !== '') {
+              event.preventDefault();
+              const hash = this.hash;
+              $('html, body').animate(
+                {
+                  scrollTop: $(hash).offset().top
+                },
+                800
+              );
+            }
+          });
+    </script>
 
 </body>
 </html>
