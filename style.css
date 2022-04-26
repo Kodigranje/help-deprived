@@ -36,6 +36,8 @@ body {
     font: 4rem sans-serif;
     line-height: 1;
     margin: 1rem;
+    animation: h1entrance 1s ease-in-out 0.3s 1 forwards;
+    transform: translateX(-1200px);
 }
 
 .page h3 {
@@ -80,4 +82,10 @@ body {
 .btn-dark {
     background: var(--btn-dark);
     color: var(--txt-light);
+}
+
+@keyframes h1entrance {
+    to {
+        transform: translateX(0px);
+    }
 }
